@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<title>全屏动画插件</title>
+	<script type="text/javascript" src="fullpage/jquery-2.1.1.min.js" ></script>
+	<link rel="stylesheet" type="text/css" href="fullpage/jquery.fullPage.css"/>
+	<style type="text/css">
+		*{margin: 0;padding: 0;}
+		body{color: #fff;}
+		.section{text-align: center;}
+		.slide{font-size: 30px;}
+	</style>
+	</head>
+	<body>
+		<div id="fullPage">
+			<div class="section"><h1>1111111</h1></div>
+			<div class="section">
+				<div class="slide">1111111</div>
+				<div class="slide">22222222</div>
+				<div class="slide">333333333</div>
+				<div class="slide">4444444444</div>
+			</div>
+			<div class="section"><h1>3333333</h1></div>
+			<div class="section active"><h1>4444444</h1></div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="fullpage/jquery.fullPage.js" ></script>
+<script>
+	$(function(){
+		$('#fullPage').fullpage({
+			sectionsColor:['red','orange','green','pink'],
+		    //controlArrows:true,//控制轮播图
+		    verticalCentered:false,
+		    //scrollingSpeed:1000,滑动时间
+		   anchors:['page1','page2','page3','page4']
+		   
+		});
+		
+
+    setInterval(function(){
+        $.fn.fullpage.moveSlideRight();
+    }, 3000);	
+	})
+</script>

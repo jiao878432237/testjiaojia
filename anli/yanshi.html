@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>演示</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<script type="text/javascript" src="fullPage/jquery-2.1.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="fullPage/jquery.fullPage.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/yanshi.css">
+</head>
+<body>
+	<div id="fullPage">
+		<div class="section"><h1>第一屏幕</h1></div>
+		<div class="section">
+			<div class="slide">slide1</div>
+			<div class="slide">slide2</div>
+			<div class="slide">slide3</div>
+			<div class="slide">slide4</div>
+		</div>
+		<div class="section active"><h1>第三屏幕</h1></div>
+		<div class="section"><h1>第四屏幕</h1></div>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="fullPage/jquery.fullPage.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#fullPage').fullpage({
+			sectionsColor:['green','orange','blue','red'],
+			anchors:['page1','page2','page3','page4'],
+			navigation:true,
+			navigationPosition:'right',
+			navigationTooltips:['page1','page2','page3','page4'],
+			showActiveTooltip:true,
+			slidesNavigation:true,
+			slidesNavPosition:'top',
+		});
+	})
+</script>
+
+
