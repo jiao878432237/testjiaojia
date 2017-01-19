@@ -1,0 +1,148 @@
+*{
+	padding: 0; margin: 0;
+}
+body{
+	font: 16px/1.8 "Microsoft Yahei",verdana;
+}
+.section{
+	position: relative;
+	background: #fff;
+	overflow: hidden;
+	text-align: center;
+}
+/******************第一屏幕的样式***********************/
+.section1{
+	background: url(../images/hero_sunset_large_2x.jpg) no-repeat center center;
+	background-size: cover;
+}
+.section1 h1{
+	margin-top: 5%; /* 是相于浏览器宽度而言 */
+	color: #fff;
+	font-weight: normal;
+	font-size: 70px;
+	opacity: 0.8;
+}
+.section1 p{
+	margin: 5% auto 0 auto;
+	color: #fff;
+	font-size: 18px;
+	width: 60%;
+	opacity: 0.6;
+	margin-top: 800px;
+}
+.section1 a{
+	display: block;
+	margin: 5% auto 0 auto;
+	color: #ff9000;
+	font-size: 18px;
+	opacity: 0.9;
+}
+/******************第二屏幕的样式***********************/
+.section2{
+	background: #f2f2f2 url(../images/technology_hero_large_2x.jpg) no-repeat bottom;
+	background-size: 100%;
+}
+.section2 h1{
+	margin: 20px auto;
+	color: #333;
+	font-weight: normal;
+	font-size: 80px;
+}
+.section2 a{
+	display: block;
+	margin: 20px auto 0 auto;
+	color: #08c;
+	font-size: 18px;
+}
+/******************第三屏幕的样式***********************/
+.section3{
+	background: #fff url(../images/timekeeping_hero_large_2x.jpg) no-repeat center 300px;
+	background-size: 50%;
+}
+.section3 h1{
+	margin: 20px auto;
+	color: #333;
+	font-family: normal;
+	font-size: 40px;
+	width: 60%;
+	margin-left: -1500px;
+}
+.section3 p{
+	margin: 20px auto 0 auto;
+	color: #333;
+	font-size: 18px;
+	width: 60%;
+	margin-left: 1500px;
+}
+.section3 a{
+	display: block;
+	margin: 20px auto 0 auto;
+	color: #08c;
+	font-size: 18px;
+}
+/******************第四屏幕的样式***********************/
+.section4{
+	background: #f2f2f2;
+}
+.section4 h1{
+	margin: 20px auto;
+	color: #333;
+	font-weight: normal;
+	font-size: 40px;
+}
+.section4 .row{
+	width: 95%;
+	margin-left: 20px;
+	color: #333;
+	font-size: 18px;
+}
+.section4 .column{
+	float: left;
+	display: inline-block;
+	width: 31%;
+	margin: 10px;
+	padding-bottom: 30px;
+	background: #f2f2f2;
+}
+.section4 .column h4{
+	margin: 20px auto;
+	/*
+	width: 102px;
+	height: 22px;
+	background: url(../images/logo_collection_primary.svg);
+	background-size: 102px 22px;
+	*/
+}
+.section4 .column h4.primary{
+	width: 102px;
+	height: 22px;
+	background: url(../images/logo_collection_primary.svg);
+	background-size: 102px 22px;
+}
+.section4 .column h4.sport{
+	width: 178px;
+	height: 22px;
+	background: url(../images/logo_collection_sport.svg);
+	background-size: 178px 22px;
+}
+.section4 .column h4.edition{
+	width: 190px;
+	height: 22px;
+	background: url(../images/logo_collection_edition.svg);
+	background-size: 190px 22px;
+}
+.section4 .column p{
+	width: 90%;
+	font-size: 16px;
+	margin: 10px auto;
+}
+.section4 .column a{
+	display: block;
+	margin: 10px auto 0 auto;
+	color: #08c;
+	font-size: 16px;
+}
+
+
+
+
